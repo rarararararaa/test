@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델</title>
+<style type="text/css">
+	/*
+		태그 밖 여백
+		margin: 속성값 4 -> 상 우 하 좌
+					 3 -> 상 좌우 하
+					 2 -> 상하 좌우
+					 1 -> 상하좌우
+		태그 안 여백
+		padding: 속성값 4 -> 상 우 하 좌
+					  3 -> 상 좌우 하
+					  2 -> 상하 좌우
+					  1 -> 상하좌우
+		테두리(border)
+		테두리의 스타일을 지정
+		border-style: 속성값
+					  dotted 점
+					  daahed 점선
+					  solid	 실선
+					  double 두줄
+					  groove 테두리를 오른쪽 아래에서 빛을 받은 스타일로 지정
+					  ridge  테두리를 왼쪽 위에서 빛을 받은 스타일로 지정
+					  outset 테두리를 밖으로 나온 스타일로 지정
+					  inset  테주리를 안으로 파인 스타일로 지정
+		굵기 지정
+		border-width: 속성값
+			thin, medium, thick
+		색상 지정
+		border-color
+		방향별로 테두리 지정
+		border-top-
+		border-right-
+		border-bottom-
+		border-lefr-
+		일괄지정 border
+		border: style width color
+	*/
+	ul{
+		list-style: none;/*리스트의 점 제거*/
+		background-color: green;
+		margin: 10p 5px 15px 10px;/*태그 밖 여백*/
+		padding:10px;/*태그 안 여백*/
+	}
+	li{
+		color: red;
+		background-color: yellow;
+		margin: 10px;
+		padding: 10px;
+	}
+	li.withborder{
+		border-style: dashed;/*점선*/
+		border-width: medium;/*중간 굵기*/
+		border-color: black;/*테두리 색*/
+	}
+</style>
+</head>
+<body>
+<ul>
+	<li>테두리가 없는 곳</li>
+	<li class="withborder">테두리가 있는 곳</li>
+	
+	
+	
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/*
+	transform 속성
+	값				설멸
+	skew(각도, 각도)	첫 번째 각도는 x축상의 왜곡을 가리키고
+					두 번째 각도는 y축상의 왜곡 각도
+					두 번째 값이 주어지지 않으면 y축에 대한
+					각도는 0으로 간주하여 y축으로는 왜곡이 발생하지 않음
+					
+	skewX(각도)		X축을 따라 주어진 각도만큼 왜곡
+	
+	skewY(각도)		Y축을 따라 주어진 각도만큼 왜곡
+	*/
+	.myphoto{
+		position: absolute;
+		left: 50px;
+		top: 70px;
+		transform: skew(10deg,10deg);
+	}
+</style>
+
+</head>
+<body>
+<img class="myphoto" alt="" src="../files/cross.jpg">
+
+
+
+</body>
+</html>
